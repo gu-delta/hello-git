@@ -81,3 +81,16 @@
 	git log -stat
 
 
+# リモートリポジトリに反映する
+
+**認証情報を毎回聞かれないように保存する**
+
+	git config --global credential.helper store
+
+
+**送信する.**
+
+	git remote add origin https://github.com/gu-delta/example.git
+	git branch -M main
+	git push -u origin main
+	
